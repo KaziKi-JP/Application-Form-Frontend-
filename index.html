@@ -113,7 +113,7 @@
     <h1>Application Form</h1>
     <p>バックエンドは作っていないので動作しません。見た目だけです。</p>
     <!-- action属性に送信先のURLを指定します -->
-    <form action="#" method="post">
+    <!-- <form action="#" method="post"> -->
       
       <div class="form-group">
         <label for="name">Robot name<span class="required">Required</span></label>
@@ -140,10 +140,13 @@
         <textarea id="badpoint" name="badpoint" placeholder="confirm bad point"></textarea>
       </div>
 
-      <button type="submit">Submit!</button>
+      <button type="submit" button id="submitbtn">Submit!</button>
       
     </form>
   </div>
 
+<script> 
+const btn = document.getElementById('myBtn'); btn.addEventListener('click', () => { alert('Submited!'); }); 
+</script>
 </body>
 </html>
